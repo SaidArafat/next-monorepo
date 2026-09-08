@@ -2,11 +2,11 @@ import type { NextConfig } from "next"
 import createNextIntlPlugin from "next-intl/plugin"
 
 const nextConfig: NextConfig = {
-  allowedDevOrigins: ["infrastructure.platform.test"],
+  allowedDevOrigins: ["auth.platform.test"],
   transpilePackages: [
     "@workspace/auth",
-    "@workspace/ui",
     "@workspace/i18n",
+    "@workspace/ui",
   ],
 }
 

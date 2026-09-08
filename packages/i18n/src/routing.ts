@@ -21,5 +21,5 @@ export function isRtl(locale: string): boolean {
 export const routing = defineRouting({
   locales,
   defaultLocale: "en",
-  localePrefix: "as-needed",
+  localePrefix: "always",
 })

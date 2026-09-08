@@ -23,7 +23,11 @@ export function LocaleSwitcher() {
             type="button"
             size="xs"
             variant={nextLocale === locale ? "default" : "outline"}
-            onClick={() => router.replace(pathname, { locale: nextLocale })}
+            onClick={() =>
+              router.replace(`${pathname}${window.location.search}`, {
+                locale: nextLocale,
+              })
+            }
           >
             {localeNames[nextLocale]}
           </Button>

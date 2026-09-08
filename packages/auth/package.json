@@ -1,0 +1,39 @@
+{
+  "name": "@workspace/auth",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "lint": "eslint",
+    "format": "prettier --write \"**/*.{ts,tsx}\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@workspace/i18n": "workspace:*",
+    "jose": "^6.1.0",
+    "next-auth": "5.0.0-beta.32",
+    "next-intl": "^4.8.3",
+    "server-only": "^0.0.1",
+    "zod": "^4.4.3"
+  },
+  "peerDependencies": {
+    "next": ">=16"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@workspace/eslint-config": "workspace:*",
+    "@workspace/typescript-config": "workspace:*",
+    "eslint": "^9",
+    "next": "16.2.6",
+    "typescript": "^5"
+  },
+  "exports": {
+    "./claims": "./src/claims.ts",
+    "./config": "./src/config.ts",
+    "./cookie": "./src/cookie.ts",
+    "./env": "./src/env.ts",
+    "./proxy": "./src/proxy.ts",
+    "./redirects": "./src/redirects.ts",
+    "./session": "./src/session.ts"
+  }
+}

@@ -1,10 +1,11 @@
 import { Cairo, Geist_Mono, Inter } from "next/font/google"
 import { hasLocale, NextIntlClientProvider } from "next-intl"
-import { getMessages } from "next-intl/server"
+import { getMessages, setRequestLocale } from "next-intl/server"
 import { notFound } from "next/navigation"
 
 import "@workspace/ui/globals.css"
 
+import { requireCurrentUser } from "@workspace/auth/session"
 import { localeDirections, routing } from "@workspace/i18n/routing"
 import { ThemeProvider } from "@workspace/ui/components/theme-provider"
 import { cn } from "@workspace/ui/lib/utils"
@@ -37,6 +38,8 @@ export default async function LocaleLayout({ children, params }: Props) {
     notFound()
   }
 
+  setRequestLocale(locale)
+  await requireCurrentUser()
   const messages = await getMessages({ locale })
   const dir = localeDirections[locale]
 

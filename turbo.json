@@ -1,6 +1,14 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "ui": "tui",
+  "globalEnv": [
+    "APP_URL",
+    "AUTH_SECRET",
+    "AUTH_COOKIE_DOMAIN",
+    "AUTH_APP_URL",
+    "AUTH_ALLOWED_ORIGINS",
+    "AUTH_LOGIN_URL"
+  ],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
