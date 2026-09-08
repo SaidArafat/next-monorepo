@@ -1,0 +1,32 @@
+{
+  "name": "@workspace/i18n",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "lint": "eslint",
+    "format": "prettier --write \"**/*.{ts,json}\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next-intl": "^4.8.3"
+  },
+  "peerDependencies": {
+    "next": ">=16"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@workspace/eslint-config": "workspace:*",
+    "@workspace/typescript-config": "workspace:*",
+    "eslint": "^9",
+    "next": "16.2.6",
+    "typescript": "^5"
+  },
+  "exports": {
+    "./routing": "./src/routing.ts",
+    "./create-request-config": "./src/create-request-config.ts",
+    "./define-app-messages": "./src/define-app-messages.ts",
+    "./navigation": "./src/navigation.ts",
+    "./messages": "./src/messages.ts"
+  }
+}

@@ -126,4 +126,7 @@
   body {
     @apply bg-background text-foreground;
     }
+  html[dir="rtl"] {
+    --font-sans: var(--font-arabic);
+  }
 }

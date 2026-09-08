@@ -1,0 +1,7 @@
+{
+  "title": "Infrastructure",
+  "description": "This service can ship on its own subdomain later.",
+  "hint": "Shared UI and i18n come from the workspace packages.",
+  "cta": "Get started",
+  "themeHint": "Press <key>d</key> to toggle dark mode"
+}
