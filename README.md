@@ -3,6 +3,11 @@
 This monorepo contains the DMS app, infrastructure service, centralized
 authentication service, and shared packages.
 
+## Architecture documentation
+
+See [`docs/README.md`](docs/README.md) for the architecture, authentication
+model, feature inventory, operational notes, and presentation guide.
+
 ## Local development
 
 Add these entries to `/etc/hosts`:
@@ -59,5 +64,5 @@ This will place the ui components in the `packages/ui/src/components` directory.
 To use the components in your app, import them from the `ui` package.
 
 ```tsx
-import { Button } from "@workspace/ui/components/button";
+import { Button } from "@workspace/ui/components/button"
 ```
