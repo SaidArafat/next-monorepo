@@ -4,6 +4,10 @@ A progressive path from foundations to real-world package management.
 Open a level heading to read its complete lesson, examples, common mistakes,
 practice tasks, and summary.
 
+Start with the [easy summary](summary.md) if you want the short map first:
+pnpm vs npm vs yarn, workspaces, root vs app `node_modules`, peers and
+phantoms, lockfiles, and Turbo.
+
 ## How to study this course
 
 Use the same learning loop in every level:
